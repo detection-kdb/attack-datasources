@@ -1,3 +1,433 @@
+- technique_id: T1564.009
+  x_mitre_is_subtechnique: true
+  technique: Resource Forking
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  data_source: file
+  data_component: file creation
+- technique_id: T1564.009
+  x_mitre_is_subtechnique: true
+  technique: Resource Forking
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  data_source: process
+  data_component: process creation
+- technique_id: T1564.009
+  x_mitre_is_subtechnique: true
+  technique: Resource Forking
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  data_source: file
+  data_component: file metadata
+- technique_id: T1564.009
+  x_mitre_is_subtechnique: true
+  technique: Resource Forking
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  data_source: command
+  data_component: command execution
+- technique_id: T1562.010
+  x_mitre_is_subtechnique: true
+  technique: Downgrade Attack
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: command
+  data_component: command execution
+- technique_id: T1562.010
+  x_mitre_is_subtechnique: true
+  technique: Downgrade Attack
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: process
+  data_component: process metadata
+- technique_id: T1562.010
+  x_mitre_is_subtechnique: true
+  technique: Downgrade Attack
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: process
+  data_component: process creation
+- technique_id: T1547.015
+  x_mitre_is_subtechnique: true
+  technique: Login Items
+  tactic:
+  - persistence
+  - privilege-escalation
+  platform:
+  - macOS
+  data_source: process
+  data_component: process creation
+- technique_id: T1547.015
+  x_mitre_is_subtechnique: true
+  technique: Login Items
+  tactic:
+  - persistence
+  - privilege-escalation
+  platform:
+  - macOS
+  data_source: file
+  data_component: file modification
+- technique_id: T1547.015
+  x_mitre_is_subtechnique: true
+  technique: Login Items
+  tactic:
+  - persistence
+  - privilege-escalation
+  platform:
+  - macOS
+  data_source: file
+  data_component: file creation
+- technique_id: T1620
+  x_mitre_is_subtechnique: false
+  technique: Reflective Code Loading
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  - Linux
+  - Windows
+  data_source: script
+  data_component: script execution
+- technique_id: T1620
+  x_mitre_is_subtechnique: false
+  technique: Reflective Code Loading
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  - Linux
+  - Windows
+  data_source: process
+  data_component: os api execution
+- technique_id: T1620
+  x_mitre_is_subtechnique: false
+  technique: Reflective Code Loading
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  - Linux
+  - Windows
+  data_source: module
+  data_component: module load
+- technique_id: T1619
+  x_mitre_is_subtechnique: false
+  technique: Cloud Storage Object Discovery
+  tactic:
+  - discovery
+  platform:
+  - IaaS
+  data_source: cloud storage
+  data_component: cloud storage enumeration
+- technique_id: T1619
+  x_mitre_is_subtechnique: false
+  technique: Cloud Storage Object Discovery
+  tactic:
+  - discovery
+  platform:
+  - IaaS
+  data_source: cloud storage
+  data_component: cloud storage access
+- technique_id: T1218.014
+  x_mitre_is_subtechnique: true
+  technique: MMC
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1218.014
+  x_mitre_is_subtechnique: true
+  technique: MMC
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: file
+  data_component: file creation
+- technique_id: T1218.014
+  x_mitre_is_subtechnique: true
+  technique: MMC
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1218.013
+  x_mitre_is_subtechnique: true
+  technique: Mavinject
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1218.013
+  x_mitre_is_subtechnique: true
+  technique: Mavinject
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1614.001
+  x_mitre_is_subtechnique: true
+  technique: System Language Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: windows registry
+  data_component: windows registry key access
+- technique_id: T1614.001
+  x_mitre_is_subtechnique: true
+  technique: System Language Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: process
+  data_component: process creation
+- technique_id: T1614.001
+  x_mitre_is_subtechnique: true
+  technique: System Language Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: process
+  data_component: os api execution
+- technique_id: T1614.001
+  x_mitre_is_subtechnique: true
+  technique: System Language Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: command
+  data_component: command execution
+- technique_id: T1615
+  x_mitre_is_subtechnique: false
+  technique: Group Policy Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  data_source: network traffic
+  data_component: network traffic content
+- technique_id: T1615
+  x_mitre_is_subtechnique: false
+  technique: Group Policy Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  data_source: active directory
+  data_component: active directory object access
+- technique_id: T1615
+  x_mitre_is_subtechnique: false
+  technique: Group Policy Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  data_source: script
+  data_component: script execution
+- technique_id: T1615
+  x_mitre_is_subtechnique: false
+  technique: Group Policy Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1615
+  x_mitre_is_subtechnique: false
+  technique: Group Policy Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1036.007
+  x_mitre_is_subtechnique: true
+  technique: Double File Extension
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: file
+  data_component: file creation
+- technique_id: T1036.007
+  x_mitre_is_subtechnique: true
+  technique: Double File Extension
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: file
+  data_component: file metadata
+- technique_id: T1562.009
+  x_mitre_is_subtechnique: true
+  technique: Safe Mode Boot
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1562.009
+  x_mitre_is_subtechnique: true
+  technique: Safe Mode Boot
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: windows registry
+  data_component: windows registry key modification
+- technique_id: T1562.009
+  x_mitre_is_subtechnique: true
+  technique: Safe Mode Boot
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: windows registry
+  data_component: windows registry key creation
+- technique_id: T1562.009
+  x_mitre_is_subtechnique: true
+  technique: Safe Mode Boot
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1564.008
+  x_mitre_is_subtechnique: true
+  technique: Email Hiding Rules
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Office 365
+  - Linux
+  - macOS
+  data_source: file
+  data_component: file modification
+- technique_id: T1564.008
+  x_mitre_is_subtechnique: true
+  technique: Email Hiding Rules
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Office 365
+  - Linux
+  - macOS
+  data_source: command
+  data_component: command execution
+- technique_id: T1564.008
+  x_mitre_is_subtechnique: true
+  technique: Email Hiding Rules
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Office 365
+  - Linux
+  - macOS
+  data_source: application log
+  data_component: application log content
+- technique_id: T1505.004
+  x_mitre_is_subtechnique: true
+  technique: IIS Components
+  tactic:
+  - persistence
+  platform:
+  - Windows
+  data_source: file
+  data_component: file creation
+- technique_id: T1505.004
+  x_mitre_is_subtechnique: true
+  technique: IIS Components
+  tactic:
+  - persistence
+  platform:
+  - Windows
+  data_source: file
+  data_component: file modification
+- technique_id: T1505.004
+  x_mitre_is_subtechnique: true
+  technique: IIS Components
+  tactic:
+  - persistence
+  platform:
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1027.006
+  x_mitre_is_subtechnique: true
+  technique: HTML Smuggling
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: file
+  data_component: file creation
+- technique_id: T1213.003
+  x_mitre_is_subtechnique: true
+  technique: Code Repositories
+  tactic:
+  - collection
+  platform:
+  - SaaS
+  data_source: logon session
+  data_component: logon session creation
+- technique_id: T1213.003
+  x_mitre_is_subtechnique: true
+  technique: Code Repositories
+  tactic:
+  - collection
+  platform:
+  - SaaS
+  data_source: application log
+  data_component: application log content
 - technique_id: T1553.006
   x_mitre_is_subtechnique: true
   technique: Code Signing Policy Modification
@@ -395,8 +825,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1608.004
   x_mitre_is_subtechnique: true
   technique: Drive-by Target
@@ -404,8 +834,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1608.003
   x_mitre_is_subtechnique: true
   technique: Install Digital Certificate
@@ -413,8 +843,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1608.002
   x_mitre_is_subtechnique: true
   technique: Upload Tool
@@ -422,8 +852,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1608.001
   x_mitre_is_subtechnique: true
   technique: Upload Malware
@@ -431,8 +861,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1608
   x_mitre_is_subtechnique: false
   technique: Stage Capabilities
@@ -440,8 +870,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1016.001
   x_mitre_is_subtechnique: true
   technique: Internet Connection Discovery
@@ -650,6 +1080,7 @@
   - Windows
   - Office 365
   - Google Workspace
+  - IaaS
   data_source: logon session
   data_component: logon session creation
 - technique_id: T1606.002
@@ -663,6 +1094,7 @@
   - Windows
   - Office 365
   - Google Workspace
+  - IaaS
   data_source: web credential
   data_component: web credential creation
 - technique_id: T1606.002
@@ -676,6 +1108,7 @@
   - Windows
   - Office 365
   - Google Workspace
+  - IaaS
   data_source: web credential
   data_component: web credential usage
 - technique_id: T1606.001
@@ -688,6 +1121,7 @@
   - macOS
   - Windows
   - SaaS
+  - IaaS
   data_source: logon session
   data_component: logon session creation
 - technique_id: T1606.001
@@ -700,6 +1134,7 @@
   - macOS
   - Windows
   - SaaS
+  - IaaS
   data_source: web credential
   data_component: web credential creation
 - technique_id: T1606.001
@@ -712,6 +1147,7 @@
   - macOS
   - Windows
   - SaaS
+  - IaaS
   data_source: web credential
   data_component: web credential usage
 - technique_id: T1606
@@ -727,6 +1163,7 @@
   - Azure AD
   - Office 365
   - Google Workspace
+  - IaaS
   data_source: logon session
   data_component: logon session creation
 - technique_id: T1606
@@ -742,6 +1179,7 @@
   - Azure AD
   - Office 365
   - Google Workspace
+  - IaaS
   data_source: web credential
   data_component: web credential creation
 - technique_id: T1606
@@ -757,6 +1195,7 @@
   - Azure AD
   - Office 365
   - Google Workspace
+  - IaaS
   data_source: web credential
   data_component: web credential usage
 - technique_id: T1555.004
@@ -1439,8 +1878,8 @@
   - reconnaissance
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1592.003
   x_mitre_is_subtechnique: true
   technique: Firmware
@@ -1457,8 +1896,8 @@
   - reconnaissance
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1592.001
   x_mitre_is_subtechnique: true
   technique: Hardware
@@ -1466,8 +1905,8 @@
   - reconnaissance
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1592
   x_mitre_is_subtechnique: false
   technique: Gather Victim Host Information
@@ -1475,8 +1914,8 @@
   - reconnaissance
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1591.004
   x_mitre_is_subtechnique: true
   technique: Identify Roles
@@ -1637,8 +2076,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: certificate
+  data_component: certificate registration
+- technique_id: T1588.004
+  x_mitre_is_subtechnique: true
+  technique: Digital Certificates
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1588.003
   x_mitre_is_subtechnique: true
   technique: Code Signing Certificates
@@ -1646,8 +2094,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: malware repository
+  data_component: malware metadata
 - technique_id: T1588.002
   x_mitre_is_subtechnique: true
   technique: Tool
@@ -1655,8 +2103,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: malware repository
+  data_component: malware metadata
 - technique_id: T1588.001
   x_mitre_is_subtechnique: true
   technique: Malware
@@ -1664,8 +2112,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: malware repository
+  data_component: malware metadata
+- technique_id: T1588.001
+  x_mitre_is_subtechnique: true
+  technique: Malware
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: malware repository
+  data_component: malware content
 - technique_id: T1588
   x_mitre_is_subtechnique: false
   technique: Obtain Capabilities
@@ -1673,8 +2130,35 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: malware repository
+  data_component: malware metadata
+- technique_id: T1588
+  x_mitre_is_subtechnique: false
+  technique: Obtain Capabilities
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: malware repository
+  data_component: malware content
+- technique_id: T1588
+  x_mitre_is_subtechnique: false
+  technique: Obtain Capabilities
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: certificate
+  data_component: certificate registration
+- technique_id: T1588
+  x_mitre_is_subtechnique: false
+  technique: Obtain Capabilities
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1587.004
   x_mitre_is_subtechnique: true
   technique: Exploits
@@ -1691,8 +2175,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1587.002
   x_mitre_is_subtechnique: true
   technique: Code Signing Certificates
@@ -1700,8 +2184,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: malware repository
+  data_component: malware metadata
 - technique_id: T1587.001
   x_mitre_is_subtechnique: true
   technique: Malware
@@ -1709,8 +2193,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: malware repository
+  data_component: malware metadata
+- technique_id: T1587.001
+  x_mitre_is_subtechnique: true
+  technique: Malware
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: malware repository
+  data_component: malware content
 - technique_id: T1587
   x_mitre_is_subtechnique: false
   technique: Develop Capabilities
@@ -1718,8 +2211,26 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: malware repository
+  data_component: malware metadata
+- technique_id: T1587
+  x_mitre_is_subtechnique: false
+  technique: Develop Capabilities
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: malware repository
+  data_component: malware content
+- technique_id: T1587
+  x_mitre_is_subtechnique: false
+  technique: Develop Capabilities
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1586.002
   x_mitre_is_subtechnique: true
   technique: Email Accounts
@@ -1736,8 +2247,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: persona
+  data_component: social media
+- technique_id: T1586.001
+  x_mitre_is_subtechnique: true
+  technique: Social Media Accounts
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: network traffic
+  data_component: network traffic content
 - technique_id: T1586
   x_mitre_is_subtechnique: false
   technique: Compromise Accounts
@@ -1745,8 +2265,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: persona
+  data_component: social media
+- technique_id: T1586
+  x_mitre_is_subtechnique: false
+  technique: Compromise Accounts
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: network traffic
+  data_component: network traffic content
 - technique_id: T1585.002
   x_mitre_is_subtechnique: true
   technique: Email Accounts
@@ -1763,8 +2292,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: persona
+  data_component: social media
+- technique_id: T1585.001
+  x_mitre_is_subtechnique: true
+  technique: Social Media Accounts
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: network traffic
+  data_component: network traffic content
 - technique_id: T1585
   x_mitre_is_subtechnique: false
   technique: Establish Accounts
@@ -1772,8 +2310,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: persona
+  data_component: social media
+- technique_id: T1585
+  x_mitre_is_subtechnique: false
+  technique: Establish Accounts
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: network traffic
+  data_component: network traffic content
 - technique_id: T1584.006
   x_mitre_is_subtechnique: true
   technique: Web Services
@@ -1781,8 +2328,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1584.005
   x_mitre_is_subtechnique: true
   technique: Botnet
@@ -1799,8 +2346,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response metadata
+- technique_id: T1584.004
+  x_mitre_is_subtechnique: true
+  technique: Server
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1584.003
   x_mitre_is_subtechnique: true
   technique: Virtual Private Server
@@ -1808,8 +2364,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response metadata
+- technique_id: T1584.003
+  x_mitre_is_subtechnique: true
+  technique: Virtual Private Server
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1584.002
   x_mitre_is_subtechnique: true
   technique: DNS Server
@@ -1817,8 +2382,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: domain name
+  data_component: active dns
+- technique_id: T1584.002
+  x_mitre_is_subtechnique: true
+  technique: DNS Server
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: passive dns
 - technique_id: T1584.001
   x_mitre_is_subtechnique: true
   technique: Domains
@@ -1826,8 +2400,26 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: domain name
+  data_component: active dns
+- technique_id: T1584.001
+  x_mitre_is_subtechnique: true
+  technique: Domains
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: passive dns
+- technique_id: T1584.001
+  x_mitre_is_subtechnique: true
+  technique: Domains
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: domain registration
 - technique_id: T1583.006
   x_mitre_is_subtechnique: true
   technique: Web Services
@@ -1835,8 +2427,8 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1583.005
   x_mitre_is_subtechnique: true
   technique: Botnet
@@ -1853,8 +2445,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response metadata
+- technique_id: T1583.004
+  x_mitre_is_subtechnique: true
+  technique: Server
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1583.003
   x_mitre_is_subtechnique: true
   technique: Virtual Private Server
@@ -1862,8 +2463,17 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response metadata
+- technique_id: T1583.003
+  x_mitre_is_subtechnique: true
+  technique: Virtual Private Server
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
 - technique_id: T1583.002
   x_mitre_is_subtechnique: true
   technique: DNS Server
@@ -1880,8 +2490,44 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response metadata
+- technique_id: T1584
+  x_mitre_is_subtechnique: false
+  technique: Compromise Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
+- technique_id: T1584
+  x_mitre_is_subtechnique: false
+  technique: Compromise Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: active dns
+- technique_id: T1584
+  x_mitre_is_subtechnique: false
+  technique: Compromise Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: passive dns
+- technique_id: T1584
+  x_mitre_is_subtechnique: false
+  technique: Compromise Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: domain registration
 - technique_id: T1583.001
   x_mitre_is_subtechnique: true
   technique: Domains
@@ -1889,8 +2535,26 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: domain name
+  data_component: active dns
+- technique_id: T1583.001
+  x_mitre_is_subtechnique: true
+  technique: Domains
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: passive dns
+- technique_id: T1583.001
+  x_mitre_is_subtechnique: true
+  technique: Domains
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: domain registration
 - technique_id: T1583
   x_mitre_is_subtechnique: false
   technique: Acquire Infrastructure
@@ -1898,8 +2562,44 @@
   - resource-development
   platform:
   - PRE
-  data_source: .nan
-  data_component: .nan
+  data_source: internet scan
+  data_component: response metadata
+- technique_id: T1583
+  x_mitre_is_subtechnique: false
+  technique: Acquire Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: internet scan
+  data_component: response content
+- technique_id: T1583
+  x_mitre_is_subtechnique: false
+  technique: Acquire Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: active dns
+- technique_id: T1583
+  x_mitre_is_subtechnique: false
+  technique: Acquire Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: passive dns
+- technique_id: T1583
+  x_mitre_is_subtechnique: false
+  technique: Acquire Infrastructure
+  tactic:
+  - resource-development
+  platform:
+  - PRE
+  data_source: domain name
+  data_component: domain registration
 - technique_id: T1564.007
   x_mitre_is_subtechnique: true
   technique: VBA Stomping
@@ -1921,7 +2621,7 @@
   - Windows
   - macOS
   data_source: file
-  data_component: file content
+  data_component: file metadata
 - technique_id: T1558.004
   x_mitre_is_subtechnique: true
   technique: AS-REP Roasting
@@ -3243,6 +3943,22 @@
   - SaaS
   - IaaS
   - Google Workspace
+  data_source: logon session
+  data_component: logon session metadata
+- technique_id: T1078.004
+  x_mitre_is_subtechnique: true
+  technique: Cloud Accounts
+  tactic:
+  - defense-evasion
+  - persistence
+  - privilege-escalation
+  - initial-access
+  platform:
+  - Azure AD
+  - Office 365
+  - SaaS
+  - IaaS
+  - Google Workspace
   data_source: user account
   data_component: user account authentication
 - technique_id: T1078.004
@@ -3350,6 +4066,21 @@
   - macOS
   - Windows
   - Containers
+  data_source: logon session
+  data_component: logon session metadata
+- technique_id: T1078.003
+  x_mitre_is_subtechnique: true
+  technique: Local Accounts
+  tactic:
+  - defense-evasion
+  - persistence
+  - privilege-escalation
+  - initial-access
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  - Containers
   data_source: user account
   data_component: user account authentication
 - technique_id: T1078.003
@@ -3379,6 +4110,20 @@
   - Linux
   - macOS
   - Windows
+  data_source: logon session
+  data_component: logon session metadata
+- technique_id: T1078.002
+  x_mitre_is_subtechnique: true
+  technique: Domain Accounts
+  tactic:
+  - defense-evasion
+  - persistence
+  - privilege-escalation
+  - initial-access
+  platform:
+  - Linux
+  - macOS
+  - Windows
   data_source: user account
   data_component: user account authentication
 - technique_id: T1078.002
@@ -3442,6 +4187,37 @@
   - defense-evasion
   platform:
   - macOS
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1564.002
+  x_mitre_is_subtechnique: true
+  technique: Hidden Users
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  - Windows
+  data_source: windows registry
+  data_component: windows registry key modification
+- technique_id: T1564.002
+  x_mitre_is_subtechnique: true
+  technique: Hidden Users
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1564.002
+  x_mitre_is_subtechnique: true
+  technique: Hidden Users
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  - Windows
   data_source: user account
   data_component: user account creation
 - technique_id: T1564.002
@@ -3451,6 +4227,7 @@
   - defense-evasion
   platform:
   - macOS
+  - Windows
   data_source: user account
   data_component: user account metadata
 - technique_id: T1564.002
@@ -3460,6 +4237,7 @@
   - defense-evasion
   platform:
   - macOS
+  - Windows
   data_source: file
   data_component: file modification
 - technique_id: T1574.006
@@ -3954,6 +4732,28 @@
   - Windows
   data_source: command
   data_component: command execution
+- technique_id: T1570
+  x_mitre_is_subtechnique: false
+  technique: Lateral Tool Transfer
+  tactic:
+  - lateral-movement
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  data_source: network share
+  data_component: network share access
+- technique_id: T1570
+  x_mitre_is_subtechnique: false
+  technique: Lateral Tool Transfer
+  tactic:
+  - lateral-movement
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  data_source: named pipe
+  data_component: named pipe metadata
 - technique_id: T1570
   x_mitre_is_subtechnique: false
   technique: Lateral Tool Transfer
@@ -4972,6 +5772,17 @@
   - macOS
   - Windows
   - Linux
+  data_source: file
+  data_component: file creation
+- technique_id: T1566.001
+  x_mitre_is_subtechnique: true
+  technique: Spearphishing Attachment
+  tactic:
+  - initial-access
+  platform:
+  - macOS
+  - Windows
+  - Linux
   data_source: application log
   data_component: application log content
 - technique_id: T1566.001
@@ -4996,6 +5807,20 @@
   - Linux
   data_source: network traffic
   data_component: network traffic flow
+- technique_id: T1566
+  x_mitre_is_subtechnique: false
+  technique: Phishing
+  tactic:
+  - initial-access
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  - SaaS
+  - Office 365
+  - Google Workspace
+  data_source: file
+  data_component: file creation
 - technique_id: T1566
   x_mitre_is_subtechnique: false
   technique: Phishing
@@ -5289,17 +6114,7 @@
   - Linux
   - macOS
   - Windows
-  data_source: file
-  data_component: file creation
-- technique_id: T1564
-  x_mitre_is_subtechnique: false
-  technique: Hide Artifacts
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
-  - macOS
-  - Windows
+  - Office 365
   data_source: process
   data_component: process creation
 - technique_id: T1564
@@ -5311,6 +6126,31 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
+  data_source: file
+  data_component: file creation
+- technique_id: T1564
+  x_mitre_is_subtechnique: false
+  technique: Hide Artifacts
+  tactic:
+  - defense-evasion
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  - Office 365
+  data_source: application log
+  data_component: application log content
+- technique_id: T1564
+  x_mitre_is_subtechnique: false
+  technique: Hide Artifacts
+  tactic:
+  - defense-evasion
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  - Office 365
   data_source: command
   data_component: command execution
 - technique_id: T1564
@@ -5322,6 +6162,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: file
   data_component: file metadata
 - technique_id: T1564
@@ -5333,6 +6174,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: user account
   data_component: user account creation
 - technique_id: T1564
@@ -5344,6 +6186,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: user account
   data_component: user account metadata
 - technique_id: T1564
@@ -5355,6 +6198,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: file
   data_component: file modification
 - technique_id: T1564
@@ -5366,6 +6210,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: script
   data_component: script execution
 - technique_id: T1564
@@ -5377,6 +6222,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: process
   data_component: os api execution
 - technique_id: T1564
@@ -5388,6 +6234,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: windows registry
   data_component: windows registry key modification
 - technique_id: T1564
@@ -5399,6 +6246,7 @@
   - Linux
   - macOS
   - Windows
+  - Office 365
   data_source: firmware
   data_component: firmware modification
 - technique_id: T1564
@@ -5410,41 +6258,9 @@
   - Linux
   - macOS
   - Windows
-  data_source: process
-  data_component: process creation
-- technique_id: T1564
-  x_mitre_is_subtechnique: false
-  technique: Hide Artifacts
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
-  - macOS
-  - Windows
-  data_source: file
-  data_component: file creation
-- technique_id: T1564
-  x_mitre_is_subtechnique: false
-  technique: Hide Artifacts
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
-  - macOS
-  - Windows
+  - Office 365
   data_source: service
   data_component: service creation
-- technique_id: T1564
-  x_mitre_is_subtechnique: false
-  technique: Hide Artifacts
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
-  - macOS
-  - Windows
-  data_source: file
-  data_component: file content
 - technique_id: T1563.002
   x_mitre_is_subtechnique: true
   technique: RDP Hijacking
@@ -5982,6 +6798,42 @@
   - defense-evasion
   platform:
   - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1562.002
+  x_mitre_is_subtechnique: true
+  technique: Disable Windows Event Logging
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: script
+  data_component: script execution
+- technique_id: T1562.002
+  x_mitre_is_subtechnique: true
+  technique: Disable Windows Event Logging
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: windows registry
+  data_component: windows registry key creation
+- technique_id: T1562.002
+  x_mitre_is_subtechnique: true
+  technique: Disable Windows Event Logging
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: application log
+  data_component: application log content
+- technique_id: T1562.002
+  x_mitre_is_subtechnique: true
+  technique: Disable Windows Event Logging
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
   data_source: sensor health
   data_component: host status
 - technique_id: T1562.002
@@ -6083,6 +6935,22 @@
   - Linux
   - macOS
   - Containers
+  - Network
+  data_source: process
+  data_component: process creation
+- technique_id: T1562
+  x_mitre_is_subtechnique: false
+  technique: Impair Defenses
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Office 365
+  - IaaS
+  - Linux
+  - macOS
+  - Containers
+  - Network
   data_source: process
   data_component: process termination
 - technique_id: T1562
@@ -6097,6 +6965,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: windows registry
   data_component: windows registry key modification
 - technique_id: T1562
@@ -6111,6 +6980,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: windows registry
   data_component: windows registry key deletion
 - technique_id: T1562
@@ -6125,6 +6995,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: command
   data_component: command execution
 - technique_id: T1562
@@ -6139,6 +7010,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: service
   data_component: service metadata
 - technique_id: T1562
@@ -6153,6 +7025,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: sensor health
   data_component: host status
 - technique_id: T1562
@@ -6167,6 +7040,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: script
   data_component: script execution
 - technique_id: T1562
@@ -6181,6 +7055,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: firewall
   data_component: firewall disable
 - technique_id: T1562
@@ -6195,6 +7070,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: firewall
   data_component: firewall rule modification
 - technique_id: T1562
@@ -6209,6 +7085,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: cloud service
   data_component: cloud service modification
 - technique_id: T1562
@@ -6223,6 +7100,7 @@
   - Linux
   - macOS
   - Containers
+  - Network
   data_source: cloud service
   data_component: cloud service disable
 - technique_id: T1003.004
@@ -6864,6 +7742,8 @@
   - Office 365
   - Windows
   - Google Workspace
+  - macOS
+  - Linux
   data_source: application log
   data_component: application log content
 - technique_id: T1114.002
@@ -7227,6 +8107,7 @@
   - execution
   platform:
   - Windows
+  - macOS
   data_source: module
   data_component: module load
 - technique_id: T1559
@@ -7236,6 +8117,7 @@
   - execution
   platform:
   - Windows
+  - macOS
   data_source: process
   data_component: process creation
 - technique_id: T1559
@@ -7245,6 +8127,7 @@
   - execution
   platform:
   - Windows
+  - macOS
   data_source: script
   data_component: script execution
 - technique_id: T1558.002
@@ -7281,6 +8164,30 @@
   - credential-access
   platform:
   - Windows
+  - Linux
+  - macOS
+  data_source: file
+  data_component: file access
+- technique_id: T1558
+  x_mitre_is_subtechnique: false
+  technique: Steal or Forge Kerberos Tickets
+  tactic:
+  - credential-access
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: command
+  data_component: command execution
+- technique_id: T1558
+  x_mitre_is_subtechnique: false
+  technique: Steal or Forge Kerberos Tickets
+  tactic:
+  - credential-access
+  platform:
+  - Windows
+  - Linux
+  - macOS
   data_source: active directory
   data_component: active directory credential request
 - technique_id: T1558
@@ -7290,6 +8197,8 @@
   - credential-access
   platform:
   - Windows
+  - Linux
+  - macOS
   data_source: logon session
   data_component: logon session metadata
 - technique_id: T1557.001
@@ -7301,7 +8210,7 @@
   platform:
   - Windows
   data_source: network traffic
-  data_component: network traffic flow
+  data_component: network traffic content
 - technique_id: T1557.001
   x_mitre_is_subtechnique: true
   technique: LLMNR/NBT-NS Poisoning and SMB Relay
@@ -7334,7 +8243,19 @@
   data_component: windows registry key modification
 - technique_id: T1557
   x_mitre_is_subtechnique: false
-  technique: Man-in-the-Middle
+  technique: Adversary-in-the-Middle
+  tactic:
+  - credential-access
+  - collection
+  platform:
+  - Windows
+  - macOS
+  - Linux
+  data_source: network traffic
+  data_component: network traffic content
+- technique_id: T1557
+  x_mitre_is_subtechnique: false
+  technique: Adversary-in-the-Middle
   tactic:
   - credential-access
   - collection
@@ -7346,19 +8267,7 @@
   data_component: network traffic flow
 - technique_id: T1557
   x_mitre_is_subtechnique: false
-  technique: Man-in-the-Middle
-  tactic:
-  - credential-access
-  - collection
-  platform:
-  - Windows
-  - macOS
-  - Linux
-  data_source: network traffic
-  data_component: network traffic flow
-- technique_id: T1557
-  x_mitre_is_subtechnique: false
-  technique: Man-in-the-Middle
+  technique: Adversary-in-the-Middle
   tactic:
   - credential-access
   - collection
@@ -7370,7 +8279,7 @@
   data_component: service creation
 - technique_id: T1557
   x_mitre_is_subtechnique: false
-  technique: Man-in-the-Middle
+  technique: Adversary-in-the-Middle
   tactic:
   - credential-access
   - collection
@@ -7596,6 +8505,31 @@
   platform:
   - macOS
   - Windows
+  - Linux
+  data_source: script
+  data_component: script execution
+- technique_id: T1056.002
+  x_mitre_is_subtechnique: true
+  technique: GUI Input Capture
+  tactic:
+  - collection
+  - credential-access
+  platform:
+  - macOS
+  - Windows
+  - Linux
+  data_source: command
+  data_component: command execution
+- technique_id: T1056.002
+  x_mitre_is_subtechnique: true
+  technique: GUI Input Capture
+  tactic:
+  - collection
+  - credential-access
+  platform:
+  - macOS
+  - Windows
+  - Linux
   data_source: process
   data_component: process creation
 - technique_id: T1056.001
@@ -8007,6 +8941,15 @@
   - lateral-movement
   platform:
   - Windows
+  data_source: service
+  data_component: service metadata
+- technique_id: T1021.006
+  x_mitre_is_subtechnique: true
+  technique: Windows Remote Management
+  tactic:
+  - lateral-movement
+  platform:
+  - Windows
   data_source: process
   data_component: process creation
 - technique_id: T1021.006
@@ -8305,6 +9248,7 @@
   platform:
   - Windows
   - Linux
+  - macOS
   data_source: command
   data_component: command execution
 - technique_id: T1036.004
@@ -8315,6 +9259,7 @@
   platform:
   - Windows
   - Linux
+  - macOS
   data_source: service
   data_component: service metadata
 - technique_id: T1036.004
@@ -8325,6 +9270,7 @@
   platform:
   - Windows
   - Linux
+  - macOS
   data_source: service
   data_component: service creation
 - technique_id: T1036.004
@@ -8335,6 +9281,7 @@
   platform:
   - Windows
   - Linux
+  - macOS
   data_source: scheduled job
   data_component: scheduled job metadata
 - technique_id: T1036.004
@@ -8345,6 +9292,7 @@
   platform:
   - Windows
   - Linux
+  - macOS
   data_source: scheduled job
   data_component: scheduled job modification
 - technique_id: T1036.003
@@ -8572,16 +9520,6 @@
   - macOS
   - Windows
   data_source: file
-  data_component: file content
-- technique_id: T1027.002
-  x_mitre_is_subtechnique: true
-  technique: Software Packing
-  tactic:
-  - defense-evasion
-  platform:
-  - macOS
-  - Windows
-  data_source: file
   data_component: file metadata
 - technique_id: T1027.002
   x_mitre_is_subtechnique: true
@@ -8589,17 +9527,6 @@
   tactic:
   - defense-evasion
   platform:
-  - macOS
-  - Windows
-  data_source: file
-  data_component: file content
-- technique_id: T1027.001
-  x_mitre_is_subtechnique: true
-  technique: Binary Padding
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
   - macOS
   - Windows
   data_source: file
@@ -8614,7 +9541,7 @@
   - macOS
   - Windows
   data_source: file
-  data_component: file content
+  data_component: file metadata
 - technique_id: T1222.002
   x_mitre_is_subtechnique: true
   technique: Linux and Mac File and Directory Permissions Modification
@@ -9011,6 +9938,7 @@
   - Office 365
   - SaaS
   - Google Workspace
+  - IaaS
   data_source: web credential
   data_component: web credential usage
 - technique_id: T1550.004
@@ -9023,6 +9951,7 @@
   - Office 365
   - SaaS
   - Google Workspace
+  - IaaS
   data_source: application log
   data_component: application log content
 - technique_id: T1550.001
@@ -9120,6 +10049,7 @@
   - Office 365
   - SaaS
   - Google Workspace
+  - IaaS
   data_source: logon session
   data_component: logon session creation
 - technique_id: T1550
@@ -9133,6 +10063,7 @@
   - Office 365
   - SaaS
   - Google Workspace
+  - IaaS
   data_source: web credential
   data_component: web credential usage
 - technique_id: T1550
@@ -9146,6 +10077,7 @@
   - Office 365
   - SaaS
   - Google Workspace
+  - IaaS
   data_source: application log
   data_component: application log content
 - technique_id: T1550
@@ -9159,6 +10091,7 @@
   - Office 365
   - SaaS
   - Google Workspace
+  - IaaS
   data_source: user account
   data_component: user account authentication
 - technique_id: T1550
@@ -9172,6 +10105,7 @@
   - Office 365
   - SaaS
   - Google Workspace
+  - IaaS
   data_source: active directory
   data_component: active directory credential request
 - technique_id: T1548.004
@@ -9529,8 +10463,18 @@
   - privilege-escalation
   platform:
   - macOS
-  data_source: file
-  data_component: file creation
+  data_source: service
+  data_component: service creation
+- technique_id: T1547.011
+  x_mitre_is_subtechnique: true
+  technique: Plist Modification
+  tactic:
+  - persistence
+  - privilege-escalation
+  platform:
+  - macOS
+  data_source: command
+  data_component: command execution
 - technique_id: T1547.011
   x_mitre_is_subtechnique: true
   technique: Plist Modification
@@ -9681,6 +10625,17 @@
   - macOS
   data_source: command
   data_component: command execution
+- technique_id: T1547.006
+  x_mitre_is_subtechnique: true
+  technique: Kernel Modules and Extensions
+  tactic:
+  - persistence
+  - privilege-escalation
+  platform:
+  - macOS
+  - Linux
+  data_source: file
+  data_component: file modification
 - technique_id: T1547.006
   x_mitre_is_subtechnique: true
   technique: Kernel Modules and Extensions
@@ -10751,6 +11706,15 @@
   - Windows
   data_source: network traffic
   data_component: network connection creation
+- technique_id: T1218.011
+  x_mitre_is_subtechnique: true
+  technique: Rundll32
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: file
+  data_component: file metadata
 - technique_id: T1218.011
   x_mitre_is_subtechnique: true
   technique: Rundll32
@@ -11003,6 +11967,16 @@
   - Office 365
   data_source: user account
   data_component: user account modification
+- technique_id: T1098.002
+  x_mitre_is_subtechnique: true
+  technique: Exchange Email Delegate Permissions
+  tactic:
+  - persistence
+  platform:
+  - Windows
+  - Office 365
+  data_source: application log
+  data_component: application log content
 - technique_id: T1098.002
   x_mitre_is_subtechnique: true
   technique: Exchange Email Delegate Permissions
@@ -11376,6 +12350,16 @@
   platform:
   - Windows
   data_source: process
+  data_component: process modification
+- technique_id: T1055.012
+  x_mitre_is_subtechnique: true
+  technique: Process Hollowing
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Windows
+  data_source: process
   data_component: os api execution
 - technique_id: T1055.012
   x_mitre_is_subtechnique: true
@@ -11456,6 +12440,16 @@
   platform:
   - Linux
   data_source: process
+  data_component: process modification
+- technique_id: T1055.008
+  x_mitre_is_subtechnique: true
+  technique: Ptrace System Calls
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Linux
+  data_source: process
   data_component: os api execution
 - technique_id: T1055.008
   x_mitre_is_subtechnique: true
@@ -11476,6 +12470,16 @@
   platform:
   - Windows
   data_source: process
+  data_component: process modification
+- technique_id: T1055.005
+  x_mitre_is_subtechnique: true
+  technique: Thread Local Storage
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Windows
+  data_source: process
   data_component: os api execution
 - technique_id: T1055.005
   x_mitre_is_subtechnique: true
@@ -11496,6 +12500,16 @@
   platform:
   - Windows
   data_source: process
+  data_component: process modification
+- technique_id: T1055.004
+  x_mitre_is_subtechnique: true
+  technique: Asynchronous Procedure Call
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Windows
+  data_source: process
   data_component: os api execution
 - technique_id: T1055.004
   x_mitre_is_subtechnique: true
@@ -11516,6 +12530,16 @@
   platform:
   - Windows
   data_source: process
+  data_component: process modification
+- technique_id: T1055.003
+  x_mitre_is_subtechnique: true
+  technique: Thread Execution Hijacking
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Windows
+  data_source: process
   data_component: os api execution
 - technique_id: T1055.003
   x_mitre_is_subtechnique: true
@@ -11536,6 +12560,16 @@
   platform:
   - Windows
   data_source: process
+  data_component: process modification
+- technique_id: T1055.002
+  x_mitre_is_subtechnique: true
+  technique: Portable Executable Injection
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Windows
+  data_source: process
   data_component: os api execution
 - technique_id: T1055.002
   x_mitre_is_subtechnique: true
@@ -11547,6 +12581,16 @@
   - Windows
   data_source: process
   data_component: process access
+- technique_id: T1055.001
+  x_mitre_is_subtechnique: true
+  technique: Dynamic-link Library Injection
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Windows
+  data_source: process
+  data_component: process modification
 - technique_id: T1055.001
   x_mitre_is_subtechnique: true
   technique: Dynamic-link Library Injection
@@ -13790,24 +14834,6 @@
   - Windows
   data_source: network traffic
   data_component: network traffic content
-- technique_id: T1220
-  x_mitre_is_subtechnique: false
-  technique: XSL Script Processing
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: process
-  data_component: process creation
-- technique_id: T1220
-  x_mitre_is_subtechnique: false
-  technique: XSL Script Processing
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: module
-  data_component: module load
 - technique_id: T1222
   x_mitre_is_subtechnique: false
   technique: File and Directory Permissions Modification
@@ -13852,6 +14878,68 @@
   - macOS
   data_source: file
   data_component: file metadata
+- technique_id: T1220
+  x_mitre_is_subtechnique: false
+  technique: XSL Script Processing
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1220
+  x_mitre_is_subtechnique: false
+  technique: XSL Script Processing
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: module
+  data_component: module load
+- technique_id: T1217
+  x_mitre_is_subtechnique: false
+  technique: Browser Bookmark Discovery
+  tactic:
+  - discovery
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: process
+  data_component: process creation
+- technique_id: T1217
+  x_mitre_is_subtechnique: false
+  technique: Browser Bookmark Discovery
+  tactic:
+  - discovery
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: command
+  data_component: command execution
+- technique_id: T1217
+  x_mitre_is_subtechnique: false
+  technique: Browser Bookmark Discovery
+  tactic:
+  - discovery
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: file
+  data_component: file access
+- technique_id: T1212
+  x_mitre_is_subtechnique: false
+  technique: Exploitation for Credential Access
+  tactic:
+  - credential-access
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: .nan
+  data_component: .nan
 - technique_id: T1189
   x_mitre_is_subtechnique: false
   technique: Drive-by Compromise
@@ -13912,81 +15000,17 @@
   - SaaS
   data_source: application log
   data_component: application log content
-- technique_id: T1207
+- technique_id: T1211
   x_mitre_is_subtechnique: false
-  technique: Rogue Domain Controller
+  technique: Exploitation for Defense Evasion
   tactic:
   - defense-evasion
   platform:
-  - Windows
-  data_source: active directory
-  data_component: active directory object creation
-- technique_id: T1207
-  x_mitre_is_subtechnique: false
-  technique: Rogue Domain Controller
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: active directory
-  data_component: active directory object modification
-- technique_id: T1207
-  x_mitre_is_subtechnique: false
-  technique: Rogue Domain Controller
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: network traffic
-  data_component: network traffic content
-- technique_id: T1207
-  x_mitre_is_subtechnique: false
-  technique: Rogue Domain Controller
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: user account
-  data_component: user account authentication
-- technique_id: T1199
-  x_mitre_is_subtechnique: false
-  technique: Trusted Relationship
-  tactic:
-  - initial-access
-  platform:
-  - Windows
-  - SaaS
-  - IaaS
   - Linux
-  - macOS
-  data_source: application log
-  data_component: application log content
-- technique_id: T1199
-  x_mitre_is_subtechnique: false
-  technique: Trusted Relationship
-  tactic:
-  - initial-access
-  platform:
   - Windows
-  - SaaS
-  - IaaS
-  - Linux
   - macOS
-  data_source: logon session
-  data_component: logon session metadata
-- technique_id: T1199
-  x_mitre_is_subtechnique: false
-  technique: Trusted Relationship
-  tactic:
-  - initial-access
-  platform:
-  - Windows
-  - SaaS
-  - IaaS
-  - Linux
-  - macOS
-  data_source: logon session
-  data_component: logon session creation
+  data_source: .nan
+  data_component: .nan
 - technique_id: T1197
   x_mitre_is_subtechnique: false
   technique: BITS Jobs
@@ -14027,118 +15051,17 @@
   - Windows
   data_source: command
   data_component: command execution
-- technique_id: T1217
+- technique_id: T1203
   x_mitre_is_subtechnique: false
-  technique: Browser Bookmark Discovery
+  technique: Exploitation for Client Execution
   tactic:
-  - discovery
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: process
-  data_component: process creation
-- technique_id: T1217
-  x_mitre_is_subtechnique: false
-  technique: Browser Bookmark Discovery
-  tactic:
-  - discovery
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: command
-  data_component: command execution
-- technique_id: T1217
-  x_mitre_is_subtechnique: false
-  technique: Browser Bookmark Discovery
-  tactic:
-  - discovery
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: file
-  data_component: file access
-- technique_id: T1213
-  x_mitre_is_subtechnique: false
-  technique: Data from Information Repositories
-  tactic:
-  - collection
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  - SaaS
-  - Office 365
-  - Google Workspace
-  data_source: logon session
-  data_component: logon session creation
-- technique_id: T1213
-  x_mitre_is_subtechnique: false
-  technique: Data from Information Repositories
-  tactic:
-  - collection
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  - SaaS
-  - Office 365
-  - Google Workspace
-  data_source: application log
-  data_component: application log content
-- technique_id: T1212
-  x_mitre_is_subtechnique: false
-  technique: Exploitation for Credential Access
-  tactic:
-  - credential-access
+  - execution
   platform:
   - Linux
   - Windows
   - macOS
   data_source: .nan
   data_component: .nan
-- technique_id: T1211
-  x_mitre_is_subtechnique: false
-  technique: Exploitation for Defense Evasion
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: .nan
-  data_component: .nan
-- technique_id: T1200
-  x_mitre_is_subtechnique: false
-  technique: Hardware Additions
-  tactic:
-  - initial-access
-  platform:
-  - Windows
-  - Linux
-  - macOS
-  data_source: .nan
-  data_component: .nan
-- technique_id: T1202
-  x_mitre_is_subtechnique: false
-  technique: Indirect Command Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: process
-  data_component: process creation
-- technique_id: T1202
-  x_mitre_is_subtechnique: false
-  technique: Indirect Command Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: command
-  data_component: command execution
 - technique_id: T1201
   x_mitre_is_subtechnique: false
   technique: Password Policy Discovery
@@ -14148,6 +15071,19 @@
   - Windows
   - Linux
   - macOS
+  - IaaS
+  data_source: user account
+  data_component: user account metadata
+- technique_id: T1201
+  x_mitre_is_subtechnique: false
+  technique: Password Policy Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  - IaaS
   data_source: process
   data_component: process creation
 - technique_id: T1201
@@ -14159,102 +15095,9 @@
   - Windows
   - Linux
   - macOS
+  - IaaS
   data_source: command
   data_component: command execution
-- technique_id: T1190
-  x_mitre_is_subtechnique: false
-  technique: Exploit Public-Facing Application
-  tactic:
-  - initial-access
-  platform:
-  - Windows
-  - IaaS
-  - Network
-  - Linux
-  - macOS
-  - Containers
-  data_source: application log
-  data_component: application log content
-- technique_id: T1190
-  x_mitre_is_subtechnique: false
-  technique: Exploit Public-Facing Application
-  tactic:
-  - initial-access
-  platform:
-  - Windows
-  - IaaS
-  - Network
-  - Linux
-  - macOS
-  - Containers
-  data_source: network traffic
-  data_component: network traffic content
-- technique_id: T1210
-  x_mitre_is_subtechnique: false
-  technique: Exploitation of Remote Services
-  tactic:
-  - lateral-movement
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: application log
-  data_component: application log content
-- technique_id: T1210
-  x_mitre_is_subtechnique: false
-  technique: Exploitation of Remote Services
-  tactic:
-  - lateral-movement
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: network traffic
-  data_component: network traffic content
-- technique_id: T1219
-  x_mitre_is_subtechnique: false
-  technique: Remote Access Software
-  tactic:
-  - command-and-control
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: process
-  data_component: process creation
-- technique_id: T1219
-  x_mitre_is_subtechnique: false
-  technique: Remote Access Software
-  tactic:
-  - command-and-control
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: network traffic
-  data_component: network traffic flow
-- technique_id: T1219
-  x_mitre_is_subtechnique: false
-  technique: Remote Access Software
-  tactic:
-  - command-and-control
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: network traffic
-  data_component: network connection creation
-- technique_id: T1219
-  x_mitre_is_subtechnique: false
-  technique: Remote Access Software
-  tactic:
-  - command-and-control
-  platform:
-  - Linux
-  - Windows
-  - macOS
-  data_source: network traffic
-  data_component: network traffic content
 - technique_id: T1195
   x_mitre_is_subtechnique: false
   technique: Supply Chain Compromise
@@ -14266,6 +15109,108 @@
   - macOS
   data_source: .nan
   data_component: .nan
+- technique_id: T1199
+  x_mitre_is_subtechnique: false
+  technique: Trusted Relationship
+  tactic:
+  - initial-access
+  platform:
+  - Windows
+  - SaaS
+  - IaaS
+  - Linux
+  - macOS
+  data_source: application log
+  data_component: application log content
+- technique_id: T1199
+  x_mitre_is_subtechnique: false
+  technique: Trusted Relationship
+  tactic:
+  - initial-access
+  platform:
+  - Windows
+  - SaaS
+  - IaaS
+  - Linux
+  - macOS
+  data_source: logon session
+  data_component: logon session metadata
+- technique_id: T1199
+  x_mitre_is_subtechnique: false
+  technique: Trusted Relationship
+  tactic:
+  - initial-access
+  platform:
+  - Windows
+  - SaaS
+  - IaaS
+  - Linux
+  - macOS
+  data_source: logon session
+  data_component: logon session creation
+- technique_id: T1218
+  x_mitre_is_subtechnique: false
+  technique: Signed Binary Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1218
+  x_mitre_is_subtechnique: false
+  technique: Signed Binary Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: file
+  data_component: file creation
+- technique_id: T1218
+  x_mitre_is_subtechnique: false
+  technique: Signed Binary Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: module
+  data_component: module load
+- technique_id: T1218
+  x_mitre_is_subtechnique: false
+  technique: Signed Binary Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: process
+  data_component: os api execution
+- technique_id: T1218
+  x_mitre_is_subtechnique: false
+  technique: Signed Binary Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1218
+  x_mitre_is_subtechnique: false
+  technique: Signed Binary Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: windows registry
+  data_component: windows registry key modification
+- technique_id: T1218
+  x_mitre_is_subtechnique: false
+  technique: Signed Binary Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: network traffic
+  data_component: network connection creation
 - technique_id: T1204
   x_mitre_is_subtechnique: false
   technique: User Execution
@@ -14409,80 +15354,222 @@
   - Containers
   data_source: process
   data_component: process creation
-- technique_id: T1203
+- technique_id: T1213
   x_mitre_is_subtechnique: false
-  technique: Exploitation for Client Execution
+  technique: Data from Information Repositories
   tactic:
-  - execution
+  - collection
   platform:
   - Linux
   - Windows
   - macOS
+  - SaaS
+  - Office 365
+  - Google Workspace
+  - IaaS
+  data_source: logon session
+  data_component: logon session creation
+- technique_id: T1213
+  x_mitre_is_subtechnique: false
+  technique: Data from Information Repositories
+  tactic:
+  - collection
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  - SaaS
+  - Office 365
+  - Google Workspace
+  - IaaS
+  data_source: application log
+  data_component: application log content
+- technique_id: T1190
+  x_mitre_is_subtechnique: false
+  technique: Exploit Public-Facing Application
+  tactic:
+  - initial-access
+  platform:
+  - Windows
+  - IaaS
+  - Network
+  - Linux
+  - macOS
+  - Containers
+  data_source: application log
+  data_component: application log content
+- technique_id: T1190
+  x_mitre_is_subtechnique: false
+  technique: Exploit Public-Facing Application
+  tactic:
+  - initial-access
+  platform:
+  - Windows
+  - IaaS
+  - Network
+  - Linux
+  - macOS
+  - Containers
+  data_source: network traffic
+  data_component: network traffic content
+- technique_id: T1210
+  x_mitre_is_subtechnique: false
+  technique: Exploitation of Remote Services
+  tactic:
+  - lateral-movement
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: application log
+  data_component: application log content
+- technique_id: T1210
+  x_mitre_is_subtechnique: false
+  technique: Exploitation of Remote Services
+  tactic:
+  - lateral-movement
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: network traffic
+  data_component: network traffic content
+- technique_id: T1200
+  x_mitre_is_subtechnique: false
+  technique: Hardware Additions
+  tactic:
+  - initial-access
+  platform:
+  - Windows
+  - Linux
+  - macOS
   data_source: .nan
   data_component: .nan
-- technique_id: T1218
+- technique_id: T1202
   x_mitre_is_subtechnique: false
-  technique: Signed Binary Proxy Execution
+  technique: Indirect Command Execution
   tactic:
   - defense-evasion
   platform:
   - Windows
   data_source: process
   data_component: process creation
-- technique_id: T1218
+- technique_id: T1202
   x_mitre_is_subtechnique: false
-  technique: Signed Binary Proxy Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: file
-  data_component: file creation
-- technique_id: T1218
-  x_mitre_is_subtechnique: false
-  technique: Signed Binary Proxy Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: module
-  data_component: module load
-- technique_id: T1218
-  x_mitre_is_subtechnique: false
-  technique: Signed Binary Proxy Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: process
-  data_component: os api execution
-- technique_id: T1218
-  x_mitre_is_subtechnique: false
-  technique: Signed Binary Proxy Execution
+  technique: Indirect Command Execution
   tactic:
   - defense-evasion
   platform:
   - Windows
   data_source: command
   data_component: command execution
-- technique_id: T1218
+- technique_id: T1219
   x_mitre_is_subtechnique: false
-  technique: Signed Binary Proxy Execution
+  technique: Remote Access Software
+  tactic:
+  - command-and-control
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: process
+  data_component: process creation
+- technique_id: T1219
+  x_mitre_is_subtechnique: false
+  technique: Remote Access Software
+  tactic:
+  - command-and-control
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: network traffic
+  data_component: network traffic flow
+- technique_id: T1219
+  x_mitre_is_subtechnique: false
+  technique: Remote Access Software
+  tactic:
+  - command-and-control
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: network traffic
+  data_component: network connection creation
+- technique_id: T1219
+  x_mitre_is_subtechnique: false
+  technique: Remote Access Software
+  tactic:
+  - command-and-control
+  platform:
+  - Linux
+  - Windows
+  - macOS
+  data_source: network traffic
+  data_component: network traffic content
+- technique_id: T1207
+  x_mitre_is_subtechnique: false
+  technique: Rogue Domain Controller
   tactic:
   - defense-evasion
   platform:
   - Windows
-  data_source: windows registry
-  data_component: windows registry key modification
-- technique_id: T1218
+  data_source: active directory
+  data_component: active directory object creation
+- technique_id: T1207
   x_mitre_is_subtechnique: false
-  technique: Signed Binary Proxy Execution
+  technique: Rogue Domain Controller
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: active directory
+  data_component: active directory object modification
+- technique_id: T1207
+  x_mitre_is_subtechnique: false
+  technique: Rogue Domain Controller
   tactic:
   - defense-evasion
   platform:
   - Windows
   data_source: network traffic
-  data_component: network connection creation
+  data_component: network traffic content
+- technique_id: T1207
+  x_mitre_is_subtechnique: false
+  technique: Rogue Domain Controller
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: user account
+  data_component: user account authentication
+- technique_id: T1216
+  x_mitre_is_subtechnique: false
+  technique: Signed Script Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: process
+  data_component: process creation
+- technique_id: T1216
+  x_mitre_is_subtechnique: false
+  technique: Signed Script Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: command
+  data_component: command execution
+- technique_id: T1216
+  x_mitre_is_subtechnique: false
+  technique: Signed Script Proxy Execution
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  data_source: script
+  data_component: script execution
 - technique_id: T1205
   x_mitre_is_subtechnique: false
   technique: Traffic Signaling
@@ -14525,33 +15612,6 @@
   - Network
   data_source: network traffic
   data_component: network traffic content
-- technique_id: T1216
-  x_mitre_is_subtechnique: false
-  technique: Signed Script Proxy Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: process
-  data_component: process creation
-- technique_id: T1216
-  x_mitre_is_subtechnique: false
-  technique: Signed Script Proxy Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: command
-  data_component: command execution
-- technique_id: T1216
-  x_mitre_is_subtechnique: false
-  technique: Signed Script Proxy Execution
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  data_source: script
-  data_component: script execution
 - technique_id: T1176
   x_mitre_is_subtechnique: false
   technique: Browser Extensions
@@ -14607,16 +15667,6 @@
   - Windows
   data_source: file
   data_component: file creation
-- technique_id: T1175
-  x_mitre_is_subtechnique: false
-  technique: Component Object Model and Distributed COM
-  tactic:
-  - lateral-movement
-  - execution
-  platform:
-  - Windows
-  data_source: .nan
-  data_component: .nan
 - technique_id: T1187
   x_mitre_is_subtechnique: false
   technique: Forced Authentication
@@ -14662,9 +15712,28 @@
   - Windows
   data_source: network traffic
   data_component: network traffic flow
+- technique_id: T1175
+  x_mitre_is_subtechnique: false
+  technique: Component Object Model and Distributed COM
+  tactic:
+  - lateral-movement
+  - execution
+  platform:
+  - Windows
+  data_source: .nan
+  data_component: .nan
 - technique_id: T1185
   x_mitre_is_subtechnique: false
-  technique: Man in the Browser
+  technique: Browser Session Hijacking
+  tactic:
+  - collection
+  platform:
+  - Windows
+  data_source: process
+  data_component: process modification
+- technique_id: T1185
+  x_mitre_is_subtechnique: false
+  technique: Browser Session Hijacking
   tactic:
   - collection
   platform:
@@ -14673,13 +15742,46 @@
   data_component: process access
 - technique_id: T1185
   x_mitre_is_subtechnique: false
-  technique: Man in the Browser
+  technique: Browser Session Hijacking
   tactic:
   - collection
   platform:
   - Windows
   data_source: logon session
   data_component: logon session creation
+- technique_id: T1140
+  x_mitre_is_subtechnique: false
+  technique: Deobfuscate/Decode Files or Information
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: process
+  data_component: process creation
+- technique_id: T1140
+  x_mitre_is_subtechnique: false
+  technique: Deobfuscate/Decode Files or Information
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: file
+  data_component: file modification
+- technique_id: T1140
+  x_mitre_is_subtechnique: false
+  technique: Deobfuscate/Decode Files or Information
+  tactic:
+  - defense-evasion
+  platform:
+  - Windows
+  - Linux
+  - macOS
+  data_source: script
+  data_component: script execution
 - technique_id: T1134
   x_mitre_is_subtechnique: false
   technique: Access Token Manipulation
@@ -14740,6 +15842,15 @@
   - Windows
   data_source: command
   data_component: command execution
+- technique_id: T1149
+  x_mitre_is_subtechnique: false
+  technique: LC_MAIN Hijacking
+  tactic:
+  - defense-evasion
+  platform:
+  - macOS
+  data_source: .nan
+  data_component: .nan
 - technique_id: T1136
   x_mitre_is_subtechnique: false
   technique: Create Account
@@ -14785,15 +15896,39 @@
   - Google Workspace
   data_source: command
   data_component: command execution
-- technique_id: T1149
+- technique_id: T1135
   x_mitre_is_subtechnique: false
-  technique: LC_MAIN Hijacking
+  technique: Network Share Discovery
   tactic:
-  - defense-evasion
+  - discovery
   platform:
   - macOS
-  data_source: .nan
-  data_component: .nan
+  - Windows
+  - Linux
+  data_source: process
+  data_component: process creation
+- technique_id: T1135
+  x_mitre_is_subtechnique: false
+  technique: Network Share Discovery
+  tactic:
+  - discovery
+  platform:
+  - macOS
+  - Windows
+  - Linux
+  data_source: command
+  data_component: command execution
+- technique_id: T1135
+  x_mitre_is_subtechnique: false
+  technique: Network Share Discovery
+  tactic:
+  - discovery
+  platform:
+  - macOS
+  - Windows
+  - Linux
+  data_source: process
+  data_component: os api execution
 - technique_id: T1137
   x_mitre_is_subtechnique: false
   technique: Office Application Startup
@@ -14874,72 +16009,6 @@
   - Office 365
   data_source: application log
   data_component: application log content
-- technique_id: T1140
-  x_mitre_is_subtechnique: false
-  technique: Deobfuscate/Decode Files or Information
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  - Linux
-  - macOS
-  data_source: process
-  data_component: process creation
-- technique_id: T1140
-  x_mitre_is_subtechnique: false
-  technique: Deobfuscate/Decode Files or Information
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  - Linux
-  - macOS
-  data_source: file
-  data_component: file modification
-- technique_id: T1140
-  x_mitre_is_subtechnique: false
-  technique: Deobfuscate/Decode Files or Information
-  tactic:
-  - defense-evasion
-  platform:
-  - Windows
-  - Linux
-  - macOS
-  data_source: script
-  data_component: script execution
-- technique_id: T1135
-  x_mitre_is_subtechnique: false
-  technique: Network Share Discovery
-  tactic:
-  - discovery
-  platform:
-  - macOS
-  - Windows
-  - Linux
-  data_source: process
-  data_component: process creation
-- technique_id: T1135
-  x_mitre_is_subtechnique: false
-  technique: Network Share Discovery
-  tactic:
-  - discovery
-  platform:
-  - macOS
-  - Windows
-  - Linux
-  data_source: command
-  data_component: command execution
-- technique_id: T1135
-  x_mitre_is_subtechnique: false
-  technique: Network Share Discovery
-  tactic:
-  - discovery
-  platform:
-  - macOS
-  - Windows
-  - Linux
-  data_source: process
-  data_component: os api execution
 - technique_id: T1153
   x_mitre_is_subtechnique: false
   technique: Source
@@ -14960,6 +16029,7 @@
   - Windows
   - Linux
   - Containers
+  - macOS
   data_source: application log
   data_component: application log content
 - technique_id: T1133
@@ -14972,6 +16042,7 @@
   - Windows
   - Linux
   - Containers
+  - macOS
   data_source: logon session
   data_component: logon session metadata
 - technique_id: T1133
@@ -14984,6 +16055,7 @@
   - Windows
   - Linux
   - Containers
+  - macOS
   data_source: network traffic
   data_component: network traffic flow
 - technique_id: T1132
@@ -15196,6 +16268,8 @@
   - Windows
   - Office 365
   - Google Workspace
+  - macOS
+  - Linux
   data_source: file
   data_component: file access
 - technique_id: T1114
@@ -15207,6 +16281,8 @@
   - Windows
   - Office 365
   - Google Workspace
+  - macOS
+  - Linux
   data_source: network traffic
   data_component: network connection creation
 - technique_id: T1114
@@ -15218,6 +16294,8 @@
   - Windows
   - Office 365
   - Google Workspace
+  - macOS
+  - Linux
   data_source: logon session
   data_component: logon session creation
 - technique_id: T1114
@@ -15229,6 +16307,8 @@
   - Windows
   - Office 365
   - Google Workspace
+  - macOS
+  - Linux
   data_source: command
   data_component: command execution
 - technique_id: T1114
@@ -15240,6 +16320,8 @@
   - Windows
   - Office 365
   - Google Workspace
+  - macOS
+  - Linux
   data_source: application log
   data_component: application log content
 - technique_id: T1113
@@ -15351,6 +16433,23 @@
   - macOS
   data_source: process
   data_component: os api execution
+- technique_id: T1110
+  x_mitre_is_subtechnique: false
+  technique: Brute Force
+  tactic:
+  - credential-access
+  platform:
+  - Windows
+  - Azure AD
+  - Office 365
+  - SaaS
+  - IaaS
+  - Linux
+  - macOS
+  - Google Workspace
+  - Containers
+  data_source: command
+  data_component: command execution
 - technique_id: T1110
   x_mitre_is_subtechnique: false
   technique: Brute Force
@@ -15886,6 +16985,10 @@
   - lateral-movement
   platform:
   - Windows
+  - Office 365
+  - SaaS
+  - Linux
+  - macOS
   data_source: process
   data_component: process creation
 - technique_id: T1080
@@ -15895,6 +16998,10 @@
   - lateral-movement
   platform:
   - Windows
+  - Office 365
+  - SaaS
+  - Linux
+  - macOS
   data_source: file
   data_component: file creation
 - technique_id: T1080
@@ -15904,6 +17011,10 @@
   - lateral-movement
   platform:
   - Windows
+  - Office 365
+  - SaaS
+  - Linux
+  - macOS
   data_source: file
   data_component: file modification
 - technique_id: T1080
@@ -15913,8 +17024,32 @@
   - lateral-movement
   platform:
   - Windows
+  - Office 365
+  - SaaS
+  - Linux
+  - macOS
   data_source: network share
   data_component: network share access
+- technique_id: T1078
+  x_mitre_is_subtechnique: false
+  technique: Valid Accounts
+  tactic:
+  - defense-evasion
+  - persistence
+  - privilege-escalation
+  - initial-access
+  platform:
+  - Windows
+  - Azure AD
+  - Office 365
+  - SaaS
+  - IaaS
+  - Linux
+  - macOS
+  - Google Workspace
+  - Containers
+  data_source: logon session
+  data_component: logon session metadata
 - technique_id: T1078
   x_mitre_is_subtechnique: false
   technique: Valid Accounts
@@ -16171,6 +17306,24 @@
   - Linux
   - macOS
   - Google Workspace
+  - Containers
+  data_source: pod
+  data_component: pod metadata
+- technique_id: T1069
+  x_mitre_is_subtechnique: false
+  technique: Permission Groups Discovery
+  tactic:
+  - discovery
+  platform:
+  - Windows
+  - Azure AD
+  - Office 365
+  - SaaS
+  - IaaS
+  - Linux
+  - macOS
+  - Google Workspace
+  - Containers
   data_source: process
   data_component: process creation
 - technique_id: T1069
@@ -16187,6 +17340,7 @@
   - Linux
   - macOS
   - Google Workspace
+  - Containers
   data_source: command
   data_component: command execution
 - technique_id: T1069
@@ -16203,6 +17357,7 @@
   - Linux
   - macOS
   - Google Workspace
+  - Containers
   data_source: group
   data_component: group enumeration
 - technique_id: T1069
@@ -16219,6 +17374,7 @@
   - Linux
   - macOS
   - Google Workspace
+  - Containers
   data_source: group
   data_component: group metadata
 - technique_id: T1069
@@ -16235,6 +17391,7 @@
   - Linux
   - macOS
   - Google Workspace
+  - Containers
   data_source: application log
   data_component: application log content
 - technique_id: T1068
@@ -16440,6 +17597,18 @@
   - Network
   data_source: process
   data_component: process metadata
+- technique_id: T1055
+  x_mitre_is_subtechnique: false
+  technique: Process Injection
+  tactic:
+  - defense-evasion
+  - privilege-escalation
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  data_source: process
+  data_component: process modification
 - technique_id: T1055
   x_mitre_is_subtechnique: false
   technique: Process Injection
@@ -17184,8 +18353,8 @@
   - Linux
   - macOS
   - Windows
-  data_source: file
-  data_component: file content
+  data_source: command
+  data_component: command execution
 - technique_id: T1027
   x_mitre_is_subtechnique: false
   technique: Obfuscated Files or Information
@@ -17219,28 +18388,6 @@
   - Windows
   data_source: process
   data_component: process creation
-- technique_id: T1027
-  x_mitre_is_subtechnique: false
-  technique: Obfuscated Files or Information
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
-  - macOS
-  - Windows
-  data_source: command
-  data_component: command execution
-- technique_id: T1027
-  x_mitre_is_subtechnique: false
-  technique: Obfuscated Files or Information
-  tactic:
-  - defense-evasion
-  platform:
-  - Linux
-  - macOS
-  - Windows
-  data_source: command
-  data_component: command execution
 - technique_id: T1026
   x_mitre_is_subtechnique: false
   technique: Multiband Communication
@@ -17683,6 +18830,7 @@
   - discovery
   platform:
   - Windows
+  - macOS
   data_source: process
   data_component: process creation
 - technique_id: T1007
@@ -17692,6 +18840,7 @@
   - discovery
   platform:
   - Windows
+  - macOS
   data_source: command
   data_component: command execution
 - technique_id: T1006
@@ -17712,6 +18861,17 @@
   - Windows
   data_source: drive
   data_component: drive access
+- technique_id: T1005
+  x_mitre_is_subtechnique: false
+  technique: Data from Local System
+  tactic:
+  - collection
+  platform:
+  - Linux
+  - macOS
+  - Windows
+  data_source: script
+  data_component: script execution
 - technique_id: T1005
   x_mitre_is_subtechnique: false
   technique: Data from Local System
